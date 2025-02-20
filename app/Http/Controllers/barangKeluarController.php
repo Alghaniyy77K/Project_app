@@ -6,10 +6,10 @@ Barang Keluar
 
 @section('content')
 <div class="container-fluid">
-    <h3 class="mb-3 mt-2">Barang Keluar</h3>
+    <h3 class="mt-2 mb-3">Barang Keluar</h3>
     <nav aria-label="breadcrumb" class="mb-1">
         <ol class="breadcrumb">
-            <li class="breadcrumb-item " aria-current="page"><a href="{{ url('/barang-keluar') }}">Barang Keluar</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a href="{{ url('/barang-keluar') }}">Barang Keluar</a></li>
             <li class="breadcrumb-item active" aria-current="page">Proses Barang Keluar</li>
         </ol>
     </nav>
@@ -37,7 +37,7 @@ Barang Keluar
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div class="form-outline mb-3">
+                                <div class="mb-3 form-outline">
                                     <label class="form-label" for="tgl_faktur">Tanggal Faktur</label>
                                     <div class="input-group">
                                         <input type="date" value="{{ old('tgl_faktur') }}" name="tgl_faktur" id="tgl_faktur" class="form-control @error('tgl_faktur') is-invalid @enderror" placeholder="Masukkan tgl_faktur Barang...."/>
@@ -50,7 +50,7 @@ Barang Keluar
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="form-outline mb-3">
+                                <div class="mb-3 form-outline">
                                     <label class="form-label" for="tgl_jatuh_tempo">Tanggal Jatuh Tempo</label>
                                     <div class="input-group">
                                         <input type="date" value="{{ old('tgl_jatuh_tempo') }}" name="tgl_jatuh_tempo" id="tgl_jatuh_tempo" class="form-control @error('tgl_jatuh_tempo') is-invalid @enderror" placeholder="Masukkan tgl_jatuh_tempo Barang...."/>
@@ -65,8 +65,7 @@ Barang Keluar
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div class="form-outline mb-4">
-                                    <label class="form-label" for="pelanggan_id"> Nama Pelanggan</label>
+                                <div class="mb-4 form-outline">
                                     <div class="input-group">
                                         <span class="input-group-text text-light bg-primary"><i class="bi bi-person-bounding-box"></i></span>
                                         <select name="pelanggan_id" class="form-control @error('pelanggan_id') is-invalid @enderror" id="pelanggan_id">
@@ -88,7 +87,7 @@ Barang Keluar
                         </div>
                         <div class="row">
                             <div class="col">
-                                <div class="form-outline mb-4">
+                                <div class="mb-4 form-outline">
                                     <label class="form-label" for="jenis_pembayaran">Jenis Pembayaran</label>
                                     <div class="input-group">
                                         <div class="form-check form-check-inline">
